@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" 
+     >
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+     android:layout_centerVertical="true"   
+        android:text="@string/Number"
+        android:textColor="#333333"
+        android:textSize="14sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/domain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/number"
+        android:layout_centerVertical="true"
+        android:text="@string/Domain"
+        android:textSize="30sp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/tc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/domain"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tcid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TCID"
+            android:textColor="#343434"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tcname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/TCName"
+            android:textColor="#C7C7CB"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/autotype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AutoType"
+            android:textColor="#C7C7CB"
+            android:textSize="14sp" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+          android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/screenshoturi"
+        android:text="@string/Result"
+        android:textColor="#10bcc9"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/screenshoturi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tc"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/image_screenshot" />
+    </LinearLayout>
+
+</RelativeLayout>
